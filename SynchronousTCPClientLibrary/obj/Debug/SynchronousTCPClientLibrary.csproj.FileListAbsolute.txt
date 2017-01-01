@@ -1,0 +1,5 @@
+c:\users\gytis\documents\visual studio 2015\Projects\SynchronousTCPClientLibrary\SynchronousTCPClientLibrary\obj\Debug\SynchronousTCPClientLibrary.csprojResolveAssemblyReference.cache
+c:\users\gytis\documents\visual studio 2015\Projects\SynchronousTCPClientLibrary\SynchronousTCPClientLibrary\bin\Debug\TCPClient_1.0.0.dll
+c:\users\gytis\documents\visual studio 2015\Projects\SynchronousTCPClientLibrary\SynchronousTCPClientLibrary\bin\Debug\TCPClient_1.0.0.pdb
+c:\users\gytis\documents\visual studio 2015\Projects\SynchronousTCPClientLibrary\SynchronousTCPClientLibrary\obj\Debug\TCPClient_1.0.0.dll
+c:\users\gytis\documents\visual studio 2015\Projects\SynchronousTCPClientLibrary\SynchronousTCPClientLibrary\obj\Debug\TCPClient_1.0.0.pdb
