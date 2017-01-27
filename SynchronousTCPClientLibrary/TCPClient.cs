@@ -79,7 +79,6 @@ namespace SynchronousTCPClientLibrary
 
                         if (bytesRec == 0)
                         {
-
                             socket.Shutdown(SocketShutdown.Both);
                             socket.Close();
 

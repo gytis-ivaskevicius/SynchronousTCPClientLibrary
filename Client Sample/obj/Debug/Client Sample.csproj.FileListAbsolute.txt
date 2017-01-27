@@ -1,0 +1,11 @@
+C:\Cloud\OneDrive\Github\C#\SynchronousTCPClientLibrary\Client Sample\bin\Debug\Client Sample.exe.config
+C:\Cloud\OneDrive\Github\C#\SynchronousTCPClientLibrary\Client Sample\obj\Debug\Client Sample.csprojResolveAssemblyReference.cache
+C:\Cloud\OneDrive\Github\C#\SynchronousTCPClientLibrary\Client Sample\obj\Debug\Client_Sample.MainForm.resources
+C:\Cloud\OneDrive\Github\C#\SynchronousTCPClientLibrary\Client Sample\obj\Debug\Client_Sample.Properties.Resources.resources
+C:\Cloud\OneDrive\Github\C#\SynchronousTCPClientLibrary\Client Sample\obj\Debug\Client Sample.csproj.GenerateResource.Cache
+C:\Cloud\OneDrive\Github\C#\SynchronousTCPClientLibrary\Client Sample\bin\Debug\Client Sample.exe
+C:\Cloud\OneDrive\Github\C#\SynchronousTCPClientLibrary\Client Sample\bin\Debug\Client Sample.pdb
+C:\Cloud\OneDrive\Github\C#\SynchronousTCPClientLibrary\Client Sample\bin\Debug\TCPClient_1.0.0.dll
+C:\Cloud\OneDrive\Github\C#\SynchronousTCPClientLibrary\Client Sample\bin\Debug\TCPClient_1.0.0.pdb
+C:\Cloud\OneDrive\Github\C#\SynchronousTCPClientLibrary\Client Sample\obj\Debug\Client Sample.exe
+C:\Cloud\OneDrive\Github\C#\SynchronousTCPClientLibrary\Client Sample\obj\Debug\Client Sample.pdb
