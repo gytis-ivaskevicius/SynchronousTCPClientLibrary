@@ -110,9 +110,14 @@ namespace SynchronousTCPClientLibrary
             }
         }
 
+        public static void send(byte[] message)
+        {
+            socket.Send(message);
+        }
+
         public static void send(string message)
         {
-            socket.Send(Encoding.ASCII.GetBytes(message));
+            send(Encoding.ASCII.GetBytes(message));
         }
 
         public static void sendln(string message)
