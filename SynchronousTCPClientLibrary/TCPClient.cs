@@ -17,7 +17,7 @@ namespace SynchronousTCPClientLibrary
         private static Socket socket;
         private static Boolean run;
 
-        public delegate void onDataReceivedEvent(string message);
+        public delegate void onDataReceivedEvent(string message, byte[] receivedBytes);
         public delegate void onConnectEvent(Socket socket);
         public delegate void onDisconnectEvent(Socket socket);
 
@@ -27,10 +27,10 @@ namespace SynchronousTCPClientLibrary
 
         public static void connectFromNewThread(string address, int port)
         {
-                new Thread(() => connect(Dns.GetHostAddresses(address)[0], port)).Start();
+            new Thread(() => connect(Dns.GetHostAddresses(address)[0], port)).Start();
         }
 
-        public static void connectFromNewThread(string address,string port)
+        public static void connectFromNewThread(string address, string port)
         {
             connectFromNewThread(address, int.Parse(port));
         }
@@ -67,15 +67,16 @@ namespace SynchronousTCPClientLibrary
                         int bytesRec = 0;
                         try
                         {
-                           bytesRec = socket.Receive(bytes);
+                            bytesRec = socket.Receive(bytes);
                         }
-                        catch {
+                        catch
+                        {
                             if (onDisconnect != null)
                                 onDisconnect.Invoke(socket);
                             connected = false;
                             break;
                         }
-                        
+
 
                         if (bytesRec == 0)
                         {
@@ -88,12 +89,12 @@ namespace SynchronousTCPClientLibrary
                             break;
                         }
                         if (onDataReceived != null)
-                            onDataReceived.Invoke(Encoding.ASCII.GetString(bytes, 0, bytesRec));
+                            onDataReceived.Invoke(Encoding.ASCII.GetString(bytes, 0, bytesRec), bytes);
                     }
                 }
                 catch (ArgumentNullException ex)
                 {
-                    Debug.WriteLine( ex.ToString());
+                    Debug.WriteLine(ex.ToString());
                 }
                 catch (SocketException ex)
                 {
@@ -101,7 +102,7 @@ namespace SynchronousTCPClientLibrary
                 }
                 catch (Exception ex)
                 {
-                    Debug.WriteLine( ex.ToString());
+                    Debug.WriteLine(ex.ToString());
                 }
             }
             catch (Exception ex)
